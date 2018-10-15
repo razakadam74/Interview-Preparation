@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>The Rectanges</title>
+    <style>
+        .divOuter {
+            width: 50%;
+            height: 50%;
+            border: 1px solid blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: lightblue;
+        }
+
+        .divMiddle {
+            position: absolute;
+            top: 25%;
+            right: 25%;
+            bottom: 25%;
+            left: 25%;
+            border: 1px solid blue;
+            background-color: red;
+        }
+
+        .divInner {
+            position: absolute;
+            top: 13.5%;
+            right: 13.5%;
+            bottom: 13.5%;
+            left: 13.5%;
+            border: 1px solid blue;
+        }
+
+        .div_title {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function popup(name) {
+            alert(name);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="divOuter" onclick="popup('Div 1')">
+        <p class="div_title">Div 1</p>
+        <div class="divMiddle" onclick="popup('Div 2')">
+            <p class="div_title">Div 1</p>
+            <div class="divInner" onclick="popup('Div 3')">
+                <p class="div_title">Div 1</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

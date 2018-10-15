@@ -1,0 +1,20 @@
+.div_1 {
+    width: 95vw;
+    height: 20vh;
+    border: 1px solid #ccc;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div_2 {
+    border: 1px solid hotpink;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+}
