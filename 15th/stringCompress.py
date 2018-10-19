@@ -10,13 +10,12 @@ def compress_string ( data):
         else:
             compress.append(data[i] + str(count))
             count = 1
-
     compress.append(data[i+1]+ str(count))
     return min([''.join(compress), data], key=len)
 
 
 str1 = 'aabcccccaaa'
-str2 = 'aaaaabbccbcaabb'
+str2 = 'aaaaabbccbcaabbd'
 
 
 print(compress_string(str2))
