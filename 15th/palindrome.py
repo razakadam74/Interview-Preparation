@@ -7,6 +7,8 @@ def reverseNum(number):
     return l[::-1]
 
 def isOrMakePalindrome(number):
+    pass
+
     
 
 print(reverseNum(1234))
